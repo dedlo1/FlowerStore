@@ -1,14 +1,30 @@
 package flower.store;
 
+/**
+ * Enum representing flower colors.
+ */
 public enum FlowerColor {
     /**
-     * Flower colors.
+     * Red color.
      */
-    RED("#FF0000"), BLUE("#0000FF");
+    RED("#FF0000"),
+    /**
+     * Blue color.
+     */
+    BLUE("#0000FF");
+
+    /**
+     * String representation of the color.
+     */
     private final String stringRepresentation;
 
-    FlowerColor(String stringRepresentation) {
-        this.stringRepresentation = stringRepresentation;
+    /**
+     * Constructor for FlowerColor.
+     *
+     * @param colorRepresentation String representation of the color.
+     */
+    FlowerColor(final String colorRepresentation) {
+        this.stringRepresentation = colorRepresentation;
     }
 
     @Override

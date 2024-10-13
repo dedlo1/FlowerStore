@@ -3,24 +3,53 @@ package flower.store;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Store {
-    private List<FlowerBucket> flowerBuckets = new ArrayList<>();
+/**
+ * Represents a store that contains flower buckets.
+ */
+public final class Store {
+    /**
+     * List of flower buckets in the store.
+     */
+    private final List<FlowerBucket> flowerBuckets = new ArrayList<>();
 
+    /**
+     * Default constructor for Store.
+     */
     public Store() {
     }
 
-    public Store(List<FlowerBucket> flowerBuckets) {
-        this.flowerBuckets = flowerBuckets;
+    /**
+     * Constructor for Store with flower buckets.
+     *
+     * @param flowerBuckets List of flower buckets.
+     */
+    public Store(final List<FlowerBucket> flowerBuckets) {
+        this.flowerBuckets.addAll(flowerBuckets);
     }
 
+    /**
+     * Gets the list of flower buckets.
+     *
+     * @return List of flower buckets.
+     */
     public List<FlowerBucket> getFlowerBuckets() {
         return flowerBuckets;
     }
 
-    public void addFlowerBucket(FlowerBucket flowerBucket) {
+    /**
+     * Adds a flower bucket to the store.
+     *
+     * @param flowerBucket Flower bucket to add.
+     */
+    public void addFlowerBucket(final FlowerBucket flowerBucket) {
         flowerBuckets.add(flowerBucket);
     }
 
+    /**
+     * Gets the total price of all flower buckets in the store.
+     *
+     * @return Total price of flower buckets.
+     */
     public double getPrice() {
         double price = 0;
         for (FlowerBucket flowerBucket : flowerBuckets) {
