@@ -21,10 +21,10 @@ public final class Store {
     /**
      * Constructor for Store with flower buckets.
      *
-     * @param flowerBuckets List of flower buckets.
+     * @param flowerBs List of flower buckets.
      */
-    public Store(final List<FlowerBucket> flowerBuckets) {
-        this.flowerBuckets.addAll(flowerBuckets);
+    public Store(final List<FlowerBucket> flowerBs) {
+        this.flowerBuckets.addAll(flowerBs);
     }
 
     /**

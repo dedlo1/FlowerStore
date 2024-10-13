@@ -17,11 +17,11 @@ public final class FlowerPack {
     /**
      * Constructor for FlowerPack.
      *
-     * @param flower The flower in the pack.
+     * @param flower1 The flower in the pack.
      * @param qty The quantity of flowers in the pack.
      */
-    public FlowerPack(final Flower flower, final int qty) {
-        this.flower = flower;
+    public FlowerPack(final Flower flower1, final int qty) {
+        this.flower = flower1;
         this.quantity = qty;
     }
 

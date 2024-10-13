@@ -38,7 +38,7 @@ public final class Chamomile {
      */
     public Chamomile(
         final double sepalLen,
-        final FlowerColor flowerColor, 
+        final FlowerColor flowerColor,
         final double flowerPrice
         ) {
         this.sepalLength = sepalLen;

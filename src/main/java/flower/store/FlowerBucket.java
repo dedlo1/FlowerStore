@@ -21,10 +21,10 @@ public final class FlowerBucket {
     /**
      * Constructor for FlowerBucket with flower packs.
      *
-     * @param flowerPacks List of flower packs.
+     * @param flPacks List of flower packs.
      */
-    public FlowerBucket(final List<FlowerPack> flowerPacks) {
-        this.flowerPacks = flowerPacks;
+    public FlowerBucket(final List<FlowerPack> flPacks) {
+        this.flowerPacks = flPacks;
     }
 
     /**
