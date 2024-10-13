@@ -14,10 +14,10 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: 11
-        distribution: 'adopt' # or 'zulu', 'temurin', etc.
+        distribution: 'adopt'
 
     - name: Build with Gradle
-      run: ./gradlew build
+      run: chmod +x gradlew && ./gradlew build
 
     - name: Run tests
       run: ./gradlew test
