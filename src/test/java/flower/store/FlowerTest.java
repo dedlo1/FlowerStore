@@ -1,9 +1,10 @@
 package flower.store;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import java.util.Random;
-import org.junit.jupiter.api.Assertions;
 
 /**
  * Tests for the Flower class.
@@ -50,5 +51,61 @@ public final class FlowerTest {
         FlowerColor color = FlowerColor.RED;
         flower.setColor(color);
         Assertions.assertEquals("#FF0000", flower.getColor());
+    }
+
+    /**
+     * Tests the flower type setting and getting functionality.
+     */
+    @Test
+    public void testFlowerType() {
+        FlowerType flowerType = FlowerType.ROSE;
+        flower.setFlowerType(flowerType);
+        Assertions.assertEquals(flowerType, flower.getFlowerType());
+    }
+
+    /**
+     * Tests the sepal length setting and getting functionality.
+     */
+    @Test
+    public void testSepalLength() {
+        double sepalLength = RANDOM_GENERATOR.nextDouble();
+        flower.setSepalLength(sepalLength);
+        Assertions.assertEquals(sepalLength, flower.getSepalLength());
+    }
+
+    /**
+     * Tests the flower type Chamomile.
+     */
+    @Test
+    public void testChamomile() {
+        Chamomile chamomile = new Chamomile(1.0, FlowerColor.RED, 1.0);
+        Assertions.assertEquals(FlowerType.CHAMOMILE, chamomile.getFlowerType());
+    }
+
+    /**
+     * Tests the flower type Rose.
+     */
+    @Test
+    public void testRose() {
+        Rose rose = new Rose(1.0, FlowerColor.RED, 1.0);
+        Assertions.assertEquals(FlowerType.ROSE, rose.getFlowerType());
+    }
+
+    /**
+     * Tests the flower type Tulip.
+     */
+    @Test
+    public void testTulip() {
+        Tulip tulip = new Tulip(1.0, FlowerColor.BLUE, 1.0);
+        Assertions.assertEquals(FlowerType.TULIP, tulip.getFlowerType());
+    }
+
+    /**
+     * Tests the FlowerBucket class.
+     */
+    @Test
+    public void testFlowerBucket() {
+        FlowerBucket bucket = new FlowerBucket();
+        Assertions.assertNotNull(bucket.getFlowerPacks());
     }
 }
