@@ -39,10 +39,10 @@ public final class Store {
     /**
      * Adds a flower bucket to the store.
      *
-     * @param flowerBucket Flower bucket to add.
+     * @param bucket Flower bucket to add.
      */
-    public void addFlowerBucket(final FlowerBucket flowerBucket) {
-        flowerBuckets.add(flowerBucket);
+    public void addFlowerBucket(final FlowerBucket bucket) {
+        flowerBuckets.add(bucket);
     }
 
     /**

@@ -16,8 +16,13 @@ jobs:
         java-version: 11
         distribution: 'adopt'
 
+    - name: Grant execute permission for Gradle wrapper
+      run: chmod +x gradlew
+
     - name: Build with Gradle
-      run: gradlew.bat build
+      run: ./gradlew build
+      shell: bash
 
     - name: Test with Gradle
-      run: gradlew.bat test
+      run: ./gradlew test
+      shell: bash

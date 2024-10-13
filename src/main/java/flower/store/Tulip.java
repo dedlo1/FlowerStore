@@ -32,16 +32,21 @@ public final class Tulip {
     /**
      * Constructor for Tulip.
      *
-     * @param sepalLength Length of the sepal.
-     * @param color Color of the flower.
-     * @param price Price of the flower.
+     * @param sepalLen Length of the sepal.
+     * @param flowerColor Color of the flower.
+     * @param flowerPrice Price of the flower.
      */
-    public Tulip(final double sepalLength, final FlowerColor color, final double price) {
-        this.sepalLength = sepalLength;
-        this.color = color;
-        this.price = price;
+    public Tulip(
+        final double sepalLen,
+        final FlowerColor flowerColor,
+        final double flowerPrice
+        ) {
+        this.sepalLength = sepalLen;
+        this.color = flowerColor;
+        this.price = flowerPrice;
         this.flowerType = FlowerType.TULIP;
     }
+
 
     /**
      * Gets the length of the sepal.

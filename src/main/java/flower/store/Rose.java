@@ -32,14 +32,18 @@ public final class Rose {
     /**
      * Constructor for Rose.
      *
-     * @param sepalLength Length of the sepal.
-     * @param color Color of the flower.
-     * @param price Price of the flower.
+     * @param sepalLen Length of the sepal.
+     * @param flowerColor Color of the flower.
+     * @param flowerPrice Price of the flower.
      */
-    public Rose(final double sepalLength, final FlowerColor color, final double price) {
-        this.sepalLength = sepalLength;
-        this.color = color;
-        this.price = price;
+    public Rose(
+        final double sepalLen,
+        final FlowerColor flowerColor,
+        final double flowerPrice
+        ) {
+        this.sepalLength = sepalLen;
+        this.color = flowerColor;
+        this.price = flowerPrice;
         this.flowerType = FlowerType.ROSE;
     }
 

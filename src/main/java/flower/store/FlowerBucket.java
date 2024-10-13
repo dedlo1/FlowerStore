@@ -39,10 +39,10 @@ public final class FlowerBucket {
     /**
      * Adds a flower pack to the bucket.
      *
-     * @param flowerPack Flower pack to add.
+     * @param pack Flower pack to add.
      */
-    public void addFlowerPack(final FlowerPack flowerPack) {
-        flowerPacks.add(flowerPack);
+    public void addFlowerPack(final FlowerPack pack) {
+        flowerPacks.add(pack);
     }
 
     /**
