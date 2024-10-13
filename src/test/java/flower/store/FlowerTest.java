@@ -79,7 +79,9 @@ public final class FlowerTest {
     @Test
     public void testChamomile() {
         Chamomile chamomile = new Chamomile(1.0, FlowerColor.RED, 1.0);
-        Assertions.assertEquals(FlowerType.CHAMOMILE, chamomile.getFlowerType());
+        Assertions.assertEquals(
+            FlowerType.CHAMOMILE, chamomile.getFlowerType()
+            );
     }
 
     /**
