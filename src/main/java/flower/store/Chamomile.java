@@ -28,10 +28,14 @@ public final class Chamomile {
      * Constructor for Chamomile.
      *
      * @param sepalLength Length of the sepal.
-     * @param color Color of the flower.
-     * @param price Price of the flower.
+     * @param flowerColor Color of the flower.
+     * @param flowerPrice Price of the flower.
      */
-    public Chamomile(final double sepalLength, final FlowerColor color, final double price) {
+    public Chamomile(
+        final double sepalLength,
+        final FlowerColor color,
+        final double price
+        ) {
         this.sepalLength = sepalLength;
         this.color = color;
         this.price = price;
