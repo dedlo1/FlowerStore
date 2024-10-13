@@ -16,8 +16,12 @@ jobs:
         java-version: 11
         distribution: 'adopt'
 
-    - name: Build with Gradle
-      run: gradlew.bat build
+    - name: Lint Code Base
+      uses: github/super-linter/slim@v4
+      env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JAVA_FILE_NAME: checkstyle.xml
 
-    - name: Test with Gradle
-      run: gradlew.bat test
+    - name: Test with Maven
+      run: mvn --batch-mode --update-snapshots package
